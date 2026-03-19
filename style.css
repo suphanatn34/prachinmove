@@ -40,6 +40,12 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
@@ -50,7 +56,6 @@ body {
     color: var(--text-dark);
     background: var(--bg-light);
     line-height: 1.7;
-    overflow-x: hidden;
 }
 
 .container {

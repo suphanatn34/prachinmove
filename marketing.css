@@ -810,6 +810,18 @@ body.promo-bar-active.admin-active .promo-bar {
 }
 
 @media(max-width:768px) {
+    .promo-bar {
+        padding: 10px 30px 10px 10px;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .promo-bar .promo-text {
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 1.4;
+    }
+
     .countdown-inner {
         flex-direction: column;
         gap: 8px
