@@ -580,50 +580,6 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     });
 });
 
-// ===== FEATURE 4: SOCIAL PROOF TOAST =====
-const socialProofToast = document.getElementById('socialProofToast');
-const socialProofName = document.getElementById('socialProofName');
-const socialProofMsg = document.getElementById('socialProofMsg');
-
-const proofData = [
-    { name: 'คุณสมชาย', msg: 'เพิ่งจองรถกระบะ อ.เมืองปราจีนบุรี' },
-    { name: 'คุณนภา', msg: 'เพิ่งจองรถ 4 ล้อ จาก อ.กบินทร์บุรี' },
-    { name: 'คุณพิชัย', msg: 'เพิ่งจองรถ 6 ล้อ อ.ศรีมหาโพธิ' },
-    { name: 'คุณวิไล', msg: 'เพิ่งจองรถกระบะ อ.ประจันตคาม' },
-    { name: 'คุณอนุชา', msg: 'เพิ่งจองรถ 4 ล้อ อ.บ้านสร้าง' },
-    { name: 'คุณสุภาพร', msg: 'เพิ่งจองรถกระบะ อ.นาดี' },
-    { name: 'คุณธนา', msg: 'เพิ่งจองรถ 6 ล้อ จาก อ.ศรีมโหสถ' },
-    { name: 'คุณแก้ว', msg: 'เพิ่งจองรถ 4 ล้อ อ.เมืองปราจีนบุรี' },
-    { name: 'คุณโชค', msg: 'เพิ่งจองรถกระบะ อ.กบินทร์บุรี' },
-];
-
-const timeLabels = ['เมื่อสักครู่', '3 นาทีที่แล้ว', '5 นาทีที่แล้ว', '8 นาทีที่แล้ว', '12 นาทีที่แล้ว'];
-
-let proofIndex = 0;
-
-function showSocialProof() {
-    const data = proofData[proofIndex % proofData.length];
-    const time = timeLabels[Math.floor(Math.random() * timeLabels.length)];
-
-    socialProofName.textContent = data.name;
-    socialProofMsg.textContent = data.msg;
-    socialProofToast.querySelector('.social-proof-time').textContent = time;
-
-    socialProofToast.classList.add('show');
-
-    setTimeout(() => {
-        socialProofToast.classList.remove('show');
-    }, 4000);
-
-    proofIndex++;
-}
-
-// Show first proof after 8 seconds, then every 25 seconds
-setTimeout(() => {
-    showSocialProof();
-    setInterval(showSocialProof, 25000);
-}, 8000);
-
 // ===== FEATURE 5: SCROLL-TO-TOP BUTTON =====
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 
