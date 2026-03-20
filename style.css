@@ -1827,33 +1827,6 @@ iframe[src*="tawk.to"] {
     }
 }
 
-/* ===== Language Selector ===== */
-.lang-selector {
-    display: flex;
-    align-items: center;
-    min-height: 40px;
-}
-
-.goog-te-combo {
-    font-family: 'Prompt', sans-serif;
-    padding: 6px 12px;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 0.85rem;
-    outline: none;
-    background: var(--white);
-    color: var(--text-dark);
-}
-
-.goog-logo-link {
-    display: none !important;
-}
-
-.goog-te-gadget {
-    color: transparent !important;
-    font-size: 0px !important;
-}
-
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
 
